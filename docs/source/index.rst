@@ -12,6 +12,7 @@ Welcome to the document for Python Practice [with unittests]
 
    intro
    tutorial
+   Exercises
 
 Indices and tables
 ==================
