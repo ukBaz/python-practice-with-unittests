@@ -105,3 +105,7 @@ venv.bak/
 
 # editor
 .idea/*
+
+
+# MacOS
+.DS_Store
