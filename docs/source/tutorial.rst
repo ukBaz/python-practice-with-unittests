@@ -26,17 +26,54 @@ you will need to change into.
 
 `cd python-practice-with-unittests`
 
+Create a Python Virtual Environment
+-----------------------------------
+
+A virtual environment can be extremely useful when developing multiple
+projects that require different dependencies and is considered good development
+practice so let's go ahead and create one.
+
+On linux & mac `python3 -m venv my_venv` or on Windows `python -m venv my_venv`
+
+This will create a Virtual Environment call my_venv in the local directory.
+You will only have to do the above once.
+
++----------+------------+-------------------------------------------+
+| Platform | Shell      | Command to activate virtual environment   |
++==========+============+===========================================+
+| Posix    | bash/zsh   | $ source <venv>/bin/activate              |
+|          +------------+-------------------------------------------+
+|          | fish       | $ . <venv>/bin/activate.fish              |
+|          +------------+-------------------------------------------+
+|          | csh/tcsh   | $ source <venv>/bin/activate.csh          |
++----------+------------+-------------------------------------------+
+| Windows  | cmd.exe    | C:\> <venv>\Scripts\activate.bat          |
+|          +------------+-------------------------------------------+
+|          | PowerShell | PS C:\> <venv>\Scripts\Activate.ps1       |
++----------+------------+-------------------------------------------+
+
+
+First Exercise
+--------------
+
 You will see another directory called `exercise101` that you will need to change
 into.
 
 `cd exercise101`
 
+To create an "Editable" install with all the required development dependencies:
+
+`pip install -e ".[dev]"`
+
+
 Running the tests
 -----------------
 
-On a Linux system and Mac, you will need enter the following command:
+On the command line you will need enter the following command:
 
-`python3 tests/test_hello.py`::
+`python setup.py test`
+
+Which will give the tests and give similar output to::
 
     test_ask (__main__.Test101) ... FAIL
     test_name (__main__.Test101) ... FAIL
