@@ -104,7 +104,7 @@ Which will give the tests and give similar output to::
 This will show that two tests have run and both have failed. You will now need
 to open up your favourite code editor on the `hello_world/my_functions.py` file.
 
-You will see to functions that are
+You will see a function that is
 
 .. code-block:: python
 
