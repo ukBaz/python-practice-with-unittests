@@ -19,12 +19,12 @@ and download the ZIP file.
 
 Or, if you have git installed on your computer, you can clone it:
 
-`git clone https://github.com/ukBaz/python-practice-with-unittests.git`
+``git clone https://github.com/ukBaz/python-practice-with-unittests.git``
 
 This should have created directory called `python-practice-with-unittests` which
 you will need to change into.
 
-`cd python-practice-with-unittests`
+``cd python-practice-with-unittests``
 
 Create a Python Virtual Environment
 -----------------------------------
@@ -33,7 +33,7 @@ A virtual environment can be extremely useful when developing multiple
 projects that require different dependencies and is considered good development
 practice so let's go ahead and create one.
 
-On linux & mac `python3 -m venv my_venv` or on Windows `python -m venv my_venv`
+On linux & mac ``python3 -m venv my_venv`` or on Windows ``python -m venv my_venv``
 
 This will create a Virtual Environment call my_venv in the local directory.
 You will only have to do the above once.
@@ -59,11 +59,11 @@ First Exercise
 You will see another directory called `exercise101` that you will need to change
 into.
 
-`cd exercise101`
+``cd exercise101``
 
 To create an "Editable" install with all the required development dependencies:
 
-`pip install -e ".[dev]"`
+``pip install -e ".[dev]"``
 
 
 Running the tests
@@ -71,7 +71,7 @@ Running the tests
 
 On the command line you will need enter the following command:
 
-`python setup.py test`
+``python setup.py test``
 
 Which will give the tests and give similar output to::
 
